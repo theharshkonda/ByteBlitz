@@ -1,14 +1,17 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
+import HomeScreen from './HomeScreen';
 
 const LoginScreen = ({ navigation }) => {
   const handleLogin = () => {
     // Handle login logic
+    navigation.navigate("Home");
   };
 
   const goToSignup = () => {
     navigation.navigate('Signup');
   };
+
 
   return (
     <ImageBackground
